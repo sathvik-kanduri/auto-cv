@@ -87,3 +87,26 @@ label
     display: inline-block;
     width:110px;
 }
+
+.skill 
+{
+    left:9em;
+
+}
+
+.name 
+{
+    bottom:10px;
+    
+}
+.area 
+{
+    padding-left: 115px;
+    border-radius: 5px;
+}
+textarea 
+{
+    border-radius: 5px;
+    border:none;
+    margin-bottom: 5px;
+}
