@@ -19,18 +19,19 @@
                 </div> 
                 <label for="email">Email :</label>
                 <input type="text" id="email" placeholder="Email"><br>
-
+                
                 <label for="phone">Phone :</label>
                 <input type="text" id="phone" placeholder="Phone"><br>
-
+                
                 <label for="Github">Github :</label>
-                <input type="text" id="Github" placeholder="Github"><br>
-
+                <input type="url" id="Github" placeholder="Github"><br>
+                
                 <label for="Linkedin">Linkedin :</label>
                 <input type="text"  id="Linkedin" placeholder="Linkedin"><br>
-
+                
                 <fieldset>
                     <legend>Education</legend>
+                    
                     <!-- Degree , College , Starting Year , Passing Year , CGPA -->
                     <label for="Degree">Degree :</label>
                     <input type="text"  id="Degree" placeholder="Degree"><br>
@@ -54,7 +55,7 @@
                     <!-- skills -->
                     Skills : 
                     <div class="area">
-                    <textarea id="Skills" rows="4" cols="28" placeholder="skills eg. HTML ,CSS..." class="skill"></textarea><br>
+                    <textarea id="Skills" rows="4" cols="31" placeholder="skills eg. HTML ,CSS..." class="skill"></textarea><br>
                     </div>
                     
                 </fieldset>
@@ -66,7 +67,7 @@
                     
                     Description :
                     <div class="area">
-                    <textarea id="Description1" rows="4" cols="28"  placeholder="write in HTML format"></textarea><br>
+                    <textarea id="Description1" rows="4" cols="31"  placeholder="write in HTML format"></textarea><br>
                     </div>
                     <label for="link">Link :</label>
                     <input type="text"  id="link" placeholder="Link"><br>
@@ -83,7 +84,8 @@
                     
                     Description :
                     <div class="area">
-                    <textarea id="Description2" rows="4" cols="28" placeholder="write in HTML format" name=""></textarea><br>
+                   
+                    <textarea id="Description2" rows="4" cols="31" placeholder="write in HTML format" name=""></textarea><br>
                     </div>
                 </fieldset>
                 <button type="submit" class="btn">submit</button>
@@ -94,47 +96,56 @@
         <div class="right">
             <div class="block1">
                 <!-- Name -->
-                <h3 id="name_resume"></h3>
-                <div class="name">
-                <p id="email_resume" class="email"></p>
-                <p id="phone_resume" class="phone"></p>
-                <p id="Github_resume" class="github"></p>
-                <p id="Linkedin_resume"></p>
+                <h1 id="name_resume"></h1>
+                <div class="name" style="align-items: center">
+                <a id="email_resume" class="word" href=" "></a>
+                <a id="phone_resume" class="word" href=" "></a>
+                <a id="Github_resume" class="word" href=" "></a>
+                <a id="Linkedin_resume" href=""></a>
                 </div>
+                
                 <!--Email , Phone , Github , Linkedin  -->
             </div>
+
+            <hr>
+            
             <div class="block2">
-                <h3 style="color:gray">Education</h3>
-                <p id="Degree_resume"></p>
-                <p id="College_resume"></p>
-                <p id="Starting_resume"></p>
-                <p id="Passing_resume"></p>
+                <h2 style="color:gray">Education</h2>
+                <hr width="100%">
+                <p id="College_resume" class="College"></p>
+                <p id="Degree_resume" class="word"></p>
+                <p id="Starting_resume" class="word"></p>
+                <p id="Passing_resume" class="word"></p>
                 
                 <br><br>
-                <p>CGPA:<p id="CGPA_resume"></p></p>
+                CGPA:<p id="CGPA_resume"></p>
             </div>
             <div class="block3">
             </div>
             <div class="block4">
-                <h3 style="color:gray">Skills</h3>
-                <p id="Skills_resume"></p>
+                <h2 style="color:gray">Skills</h2>
+                <hr width="100%">
+                <p id="Skills_resume" class="College"></p>
             </div>
             <div class="block4">
-                <h3 style="color:gray">Project</h3>
-                <p id="Project_resume"></p>
-                <p id="Description_resume1"></p>
-                <p id="link_resume"></p>
+                <h2 style="color:gray">Project</h2>
+                <hr width="100%">
+                <p id="Project_resume" class="College"></p>
+                <p id="Description_resume1" class="word"></p>
+                <a id="link_resume" class="word" href=" "></a>
 
             </div>
             <div class="block5">
-                <h3 style="color:gray">Experience</h3>
-                <p id="Company_resume"></p>
-                <p id="Designation_resume"></p>
-                <p id="Duration_resume"></p>
-                <p id="Description_resume2"></p>
+                <h2 style="color:gray">Experience</h2>
+                <hr width="100%">
+                <p id="Designation_resume" class="College"></p>
+                <p id="Company_resume" class="word"></p>
+                <p id="Duration_resume" class="word"></p>
+                <p id="Description_resume2" class="word"></p>
             </div>
             <button class="btn print" onclick="handlePrint()">Print</button>
         </div>
+        
     </main>
 
     <script src="./app.js"></script>
