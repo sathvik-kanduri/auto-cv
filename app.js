@@ -113,14 +113,15 @@ input.addEventListener('input', event => {
 
 
 function handleLeft() {
-  const left = document.querySelector(".left");
-  const right = document.querySelector(".right");
-  const print = document.querySelector(".print");
+  const left = document.querySelector(".left").style.display="none";
+  const right = document.querySelector(".right").style.display="block";
+  const print = document.querySelector(".print").style.display="block";
   // write more codes here
 }
 function handlePrint() {
-  const right = document.querySelector(".right");
-  const left = document.querySelector(".left");
-  const print = document.querySelector(".print");
+  const right = document.querySelector(".right").style.display="block";
+  const left = document.querySelector(".left").style.display="block";
+  
   // write more codes here
+  window.print()
 }
